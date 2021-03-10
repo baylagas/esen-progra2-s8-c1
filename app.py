@@ -26,9 +26,14 @@ def dashboard():
     return render_template("dashboard.html")
 
 
-@app.route("/add")
-def add():
-    return render_template("add.html")
+@app.route("/add_cli")
+def addcli():
+    return render_template("add_cli.html")
+
+
+@app.route("/add_adm")
+def addadm():
+    return render_template("add_adm.html")
 
 
 if __name__ == "__main__":
